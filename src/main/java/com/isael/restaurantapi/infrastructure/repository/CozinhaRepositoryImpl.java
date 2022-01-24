@@ -26,6 +26,11 @@ public class CozinhaRepositoryImpl implements CozinhaRepository {
         return manager.merge(cozinha);
     }
 
+    @Override
+    public Cozinha updateCozinha(Long id, Cozinha cozinha) {
+
+        return null;
+    }
 
     @Override
     public Cozinha getCozinhaById(Long id) {

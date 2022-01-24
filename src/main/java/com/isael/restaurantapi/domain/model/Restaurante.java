@@ -4,6 +4,7 @@ import javax.persistence.*;
 import java.util.Objects;
 
 @Entity
+@Table(name = "restaurante")
 public class Restaurante {
 
     @Id
@@ -13,7 +14,7 @@ public class Restaurante {
     @Column(nullable = false)
     private String name;
 
-    @Column(name = "taxa_frete",nullable = false)
+    @Column(name = "taxa_frete", nullable = false)
     private String taxaFrete;
 
     @ManyToOne

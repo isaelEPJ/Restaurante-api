@@ -17,8 +17,6 @@ public class RestauranteRepositoryImpl implements RestauranteRepository {
 
     public List<Restaurante> getRestaurantes() {
         return manager.createQuery("from Restaurante", Restaurante.class).getResultList();
-//        TypedQuery<Restaurante> query = manager.createQuery("from Restaurante", Restaurante.class).getResultList();
-//        return restaurantes;
     }
 
     @Transactional

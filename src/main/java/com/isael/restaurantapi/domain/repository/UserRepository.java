@@ -11,7 +11,9 @@ public interface UserRepository {
 
     public List<User> getUsers();
 
-    public User getUserById(int id);
+    public User getUserById(Long id);
+
+    public User updateUser(Long id, User user);
 
     public User createUser(User user);
 
